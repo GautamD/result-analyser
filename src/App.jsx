@@ -261,7 +261,7 @@ class ChartData extends React.Component {
             }}
           >
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey={header[1]} tickSize={60} tickLine={false} height={200} angle={90} tickFormatter={(value) => value.split(" ")[0]} />
+            <XAxis dataKey={header[1]} interval={0} tickSize={60} tickLine={false} height={200} angle={90} tickFormatter={(value) => value.split(" ")[0]} />
             <YAxis />
             <Tooltip />
             <Legend />
@@ -302,7 +302,7 @@ class ChartData extends React.Component {
               }}
             >
               <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey={header[1]} tickSize={60} tickLine={false} height={200} angle={90} tickFormatter={(value) => value.split(" ")[0]} />
+              <XAxis dataKey={header[1]} interval={0} tickSize={60} tickLine={false} height={200} angle={90} tickFormatter={(value) => value.split(" ")[0]} />
               <YAxis />
               <Tooltip />
               <Legend />
@@ -331,7 +331,7 @@ class ChartData extends React.Component {
                   }}
                 >
                   <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey={header[1]} tickSize={60} tickLine={false} height={200} angle={90} tickFormatter={(value) => value.split(" ")[0]} />
+                  <XAxis dataKey={header[1]} interval={0} tickSize={60} tickLine={false} height={200} angle={90} tickFormatter={(value) => value.split(" ")[0]} />
                   <YAxis />
                   <Tooltip />
                   <Legend />
@@ -352,7 +352,7 @@ class ChartData extends React.Component {
                   }}
                 >
                   <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey={header[1]} tickSize={60} tickLine={false} height={200} angle={90} tickFormatter={(value) => value.split(" ")[0]} />
+                  <XAxis dataKey={header[1]} interval={0} tickSize={60} tickLine={false} height={200} angle={90} tickFormatter={(value) => value.split(" ")[0]} />
                   <YAxis />
                   <Tooltip />
                   <Legend />
