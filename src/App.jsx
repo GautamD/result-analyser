@@ -263,7 +263,10 @@ class ChartData extends React.Component {
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey={header[1]} interval={0} tickSize={60} tickLine={false} height={200} angle={90} tickFormatter={(value) => value.split(" ")[0]} />
             <YAxis />
-            <Tooltip />
+            {subject == header[14]
+              ? <Tooltip formatter={(value, name, props) => parseFloat(value).toFixed(2)} />
+              : <Tooltip />
+            }
             <Legend />
             <Bar dataKey={subject} fill="#8884d8" activeBar={<Rectangle fill="pink" stroke="blue" />} />
           </BarChart>
